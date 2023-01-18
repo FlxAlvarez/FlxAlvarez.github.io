@@ -447,12 +447,6 @@ body{
     list-style: none;    
 }
 
-.logo-image-wrapper{
-    display: grid;
-    grid-template-rows: max-content auto;  
-    align-self: center;
-}
-
 @media screen and (min-width: 575px) {
     .logo-wrapper{ 
         display: grid;
@@ -463,6 +457,13 @@ body{
         padding-right: 16rem;
         list-style: none;    
     }
+}
+
+
+.logo-image-wrapper{
+    display: grid;
+    grid-template-rows: max-content auto;  
+    align-self: center;
 }
 
 
