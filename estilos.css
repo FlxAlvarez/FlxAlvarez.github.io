@@ -1,0 +1,657 @@
+
+/**************************************************** I N D E X ****************************************/
+
+body{
+    margin: 0;
+}
+
+
+.header-wrapper{
+    display: grid;
+    background: #2dab66;
+    width: 100%; 
+}
+
+
+.header-icons-wrapper{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-left: 1rem;
+    list-style: none; 
+    align-self: center;   
+}
+
+
+.header-image-wrapper{
+    padding-top: 5%;
+    display: grid;
+    grid-template-rows: max-content auto;  
+}
+
+
+.header-image{
+    display: grid;
+    width: 30%;
+    padding: 5%;
+    margin-top: 25%;
+    margin-left: 5%;
+}
+
+@media screen and (min-width: 575px) {
+    .header-image{
+        display: grid;
+        width: 10%;
+        padding-left: 20%;
+        margin-top: 7%;
+        margin-left: 30%;
+    }
+}
+
+
+.biblio-logo{
+    width: 100%;
+    padding: 0%;
+}
+
+@media screen and (min-width: 575px) {
+    .biblio-logo{
+        width: 30%;
+        padding: 0%;
+        margin-left: 30%;
+    }
+}
+
+
+.titulo1{
+    font-family: "Asap";
+    padding-left: 2rem;   
+}
+
+@media screen and (min-width: 575px) {
+    .titulo1{
+        font-family: "Asap";
+        padding-left: 10%;  
+        font-size: 3rem; 
+    }
+
+}
+
+.buscador-wrapper{
+  padding-left: 2rem;
+}
+
+@media screen and (min-width: 575px) {
+    .buscador-wrapper{
+        padding-left: 10%;
+    }
+}
+
+
+.buscador-text{
+    font-family: "Nunito";
+    border: solid #222222 2px;
+    border-radius: 15px;
+    width: 60%;   
+}
+
+
+.buscador-wrapper input[type=text]{
+    font-family: "Nunito";
+    border: none;
+    outline: none;
+    width: 80%;
+    margin-left: 3%;
+}
+
+
+.articulos-destacados-wrapper{
+    display: grid;
+    padding: 1rem;
+        top: 1rem;
+}
+
+
+.articulos-destacados-tittle{
+    font-family: "Asap";
+    justify-self: flex-start;
+    padding-left: 1rem;
+    
+}
+
+@media screen and (min-width: 575px) {
+    .articulos-destacados-tittle{
+        font-family: "Asap";
+        justify-self: flex-start;
+        padding-left: 9.4%;
+        font-size: 2rem;      
+    }
+}
+
+.item-wrapper{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    margin-top: -1rem;
+}
+
+@media screen and (min-width: 575px) {
+    .item-wrapper{
+        display: grid;
+        grid-auto-flow: column;
+        gap: 0.5rem;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-left: 12rem;
+        padding-right: 12rem;
+    }
+}
+
+.item-wrapper-items{
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-rows: max-content auto;
+}
+
+@media screen and (min-width: 575px) {
+    .item-wrapper-items{
+        display: grid;
+        grid-gap: 0.5rem;
+        grid-template-rows: max-content auto;
+        padding: 2rem;
+    }
+    
+}
+
+.item-image{
+    background-color: #86f1b8;
+    width: 100%;    
+    border-radius: 0.4rem; 
+}
+
+@media screen and (min-width: 575px) {
+    .item-image{
+        background-color: #86f1b8;
+        width: 100%;    
+        border-radius: 1rem; 
+    }
+    
+}
+
+.item-info{
+    font-family: "Nunito";
+    font-size: 1rem;
+    margin: 0;
+}
+
+@media screen and (min-width: 575px) {
+    .item-info{
+        font-family: "Nunito";
+        font-size: 1.3rem;
+        margin: 0;
+    }
+}
+
+.button-wrapper{
+    margin-top: 0%;
+}
+
+.button-text{
+    font-size: 1rem;
+    text-align: center;
+    border: transparent 2px;
+    border-radius: 12px;
+    padding: 0.5rem;
+    border-bottom-left-radius: 5%;
+    border-top-right-radius: 5%;
+    background-color: #2dab66;
+    color: white;
+    font-family: "Asap";
+    width: 35%;  
+    margin-left: 30%;
+}
+
+.button-wrapper a {
+    padding: 5%;
+    text-decoration: none;
+}
+
+
+@media screen and (min-width: 575px) {
+    .button-text{
+        font-size: 1.3rem;
+        text-align: center;
+        border: transparent 2px;
+        border-radius: 12px;
+        padding: 0.5rem;
+        border-bottom-left-radius: 5%;
+        border-top-right-radius: 5%;
+        background-color: #2dab66;
+        color: white;
+        font-family: "Asap";
+        width: 12%;  
+        margin-left: 43%;
+    }
+}
+
+
+
+.button-link{
+    font-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+
+.actividades-wrapper{
+    display: grid;
+    padding: 1rem;
+        top: 1rem;
+}
+
+.actividades-tittle{
+    font-family: "Asap";
+    justify-self: flex-start;
+    padding-left: 1rem;
+}
+
+@media screen and (min-width: 575px) {
+    .actividades-tittle{
+        font-family: "Asap";
+        justify-self: flex-start;
+        padding-left: 10%;
+        font-size: 2rem;
+        padding-top: 5%;
+    }
+}
+
+.activity-wrapper{
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    margin-top: -1rem;
+    list-style: none;   
+}
+
+@media screen and (min-width: 575px) {
+    .activity-wrapper{
+        display: grid;
+        grid-auto-flow: column;
+        gap: 5rem;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        list-style: none;  
+        padding-left: 16%; 
+        padding-right: 16%;
+    }
+}
+
+
+.actividades-image-wrapper{
+    padding-top: 5%;
+    display: grid;
+    grid-template-rows: max-content auto;  
+}
+
+
+.actividades-image{
+    width: 100%;
+    border-radius: 0.4rem;   
+}
+
+@media screen and (min-width: 575px) {
+    .actividades-image{
+        width: 100%;
+        border-radius: 1rem; 
+        margin-left: auto;
+        margin-right: auto;  
+    }
+}
+
+.actividades-info{
+    font-family: "Nunito";
+    color: white;
+    margin-top: -36%;
+    text-align: center;
+    font-size:x-large;
+    font-weight:bolder;
+}
+
+@media screen and (min-width: 575px) {
+    .actividades-info{
+        font-family: "Nunito";
+        color: white;
+        margin-top: -36%;
+        text-align: center;
+        font-size:x-large;
+        font-weight:bolder;
+        font-size: 3rem;
+    }
+}
+
+.ver-mas-wrapper{
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 1fr;
+    margin-top: -5%;
+}
+
+@media screen and (min-width: 575px) {
+    .ver-mas-image{
+        align-self: center;
+        margin-left: 25%;
+        width: 2%;
+    }
+}
+
+.ver-mas-image{
+    align-self: center;
+    padding: 12%;
+}
+
+.ver-mas-text{
+    font-family: "Nunito";
+    margin-left: -73%;
+    align-self: center;
+}
+
+@media screen and (min-width: 575px) {
+    .ver-mas-text{
+        font-family: "Nunito";
+        margin-left: -60%;
+        align-self: center;
+    }
+}
+
+
+.registrarse-wrapper{
+    display: grid;
+    padding: 1rem;
+        top: 1rem;       
+}
+
+.registrarse-wrapper a{
+    text-decoration: none;       
+}
+
+@media screen and (min-width: 575px) {
+    .registrarse-wrapper{
+        display: grid;
+        padding-left: 16%;
+        padding-right: 16%;
+        padding-top: 5%;       
+    }
+}
+
+.registrarse-image{
+    width: 100%;
+    border-radius: 0.4rem;
+}
+
+@media screen and (min-width: 575px) {
+    .registrarse-image{
+        width: 100%;
+        border-radius: 1.2rem;
+    }
+}
+
+.registrarse-text{
+    font-family: "Asap";
+    margin-top: -60%;
+    color: white; 
+    text-align: center;
+    font-size:x-large;
+}
+
+@media screen and (min-width: 575px) {
+    .registrarse-text{
+        font-family: "Asap";
+        margin-top: -60%;
+        color: white; 
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+
+.button2{
+    margin-top: -28%;
+}
+
+@media screen and (min-width: 575px) {
+    .button2{
+        margin-top: -20%;
+    }
+}
+
+
+.social-media-wrapper{
+    display: grid;
+    margin-top: 2%;
+}
+
+.logo-wrapper{ 
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    padding: 1rem;
+    list-style: none;    
+}
+
+.logo-image-wrapper{
+    display: grid;
+    grid-template-rows: max-content auto;  
+    align-self: center;
+}
+
+@media screen and (min-width: 575px) {
+    .logo-wrapper{ 
+        display: grid;
+        grid-auto-flow: column;
+        gap: 0.5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        padding-left: 16rem;
+        padding-right: 16rem;
+        list-style: none;    
+    }
+}
+
+
+.logo-image{
+    width: 70%;  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media screen and (min-width: 575px) {
+    .logo-image{
+        width: 25%;  
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+.footer-wrapper{
+    display: grid;
+    padding: 1rem;
+    background-color: #2dab66;
+    margin-top: 10%;
+
+}
+
+.footer-tittle-wrapper{
+    padding-left: 1rem;
+}
+
+.footer-tittle-wrapper a{
+    font-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-tittle{
+    font-family: "Asap";
+    color: white;
+}
+
+
+
+
+/**************************************************** B I B L I O T E C A ****************************************/
+
+
+.biblio-info-tittle{
+    font-family: "Asap";   
+}
+
+.objetivo-wrapper{
+    display: grid;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 575px) {
+    .objetivo-wrapper{
+        display: grid;
+        padding-left:16%;
+        padding-right: 16%; 
+    }
+}
+
+.objetivo{
+    border: solid #2dab66 5px;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 575px) {
+    .objetivo-wrapper{
+        display: grid;
+        padding-left:20%;
+        width: 60%;
+    }
+}
+
+
+.objetivo h2{
+    font-family: "Asap";
+    margin-top: 0;
+    
+}
+
+.objetivo p{
+    font-family: "Nunito";
+}
+
+
+
+/**************************************************** R E G I S T R A T E ****************************************/
+
+.formulary-wrapper{
+    display: grid;
+    margin-top: 0;
+}
+
+.formulary-info{
+    font-family: "Nunito";
+    margin-left: 10%;
+    margin-top: 10%;
+    border-bottom: solid #222222;
+    width: 80%;
+}
+
+@media screen and (min-width: 575px) {
+    .formulary-info{
+        font-family: "Nunito";
+        margin-left: 20%;
+        margin-top: 2%;
+        border-bottom: solid #222222;
+        width: 60%;
+    }
+}
+
+
+.formulary-info input[type=text]{
+    font-family: "Nunito";
+    border: none;
+    outline: none;
+    width: 80%;
+    margin-left: 3%;
+}
+
+@media screen and (min-width: 575px) {
+    .formulary-info input[type=text]{
+        font-family: "Nunito";
+        border: none;
+        outline: none;
+        width: 80%;
+        margin-left: 3%;
+        font-size: 1rem;
+    }
+}
+
+
+.button-wrapper-space{
+    padding-top: 10%;
+    margin-bottom: 50%;
+}
+
+@media screen and (min-width: 575px) {
+    .button-wrapper-space{
+        padding: 5%;
+        margin-bottom: 0%;
+    }
+}
+
+.space{
+    padding-bottom:70% ;
+}
+
+@media screen and (min-width: 575px) {
+    .space{
+        padding-bottom:14% ;
+    }
+}
+
+
+/**************************************************** C A T A L O G O ****************************************/
+
+.selector-wrapper{
+    padding: 2rem;
+}
+
+@media screen and (min-width: 575px) {
+    .selector-wrapper{
+        padding-left: 10%;
+        width: 40%
+    }   
+}
+
+.selector-wrapper select{
+    font-family: "Nunito";
+    width: 69%;
+    border: solid #222222 2px;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 1%;
+}
+
+@media screen and (min-width: 575px) {
+    .selector-wrapper select{
+        font-family: "Nunito";
+        width: 60%;
+        border: solid #222222 2px;
+        border-radius: 15px;
+        outline: none;
+        padding-left: 1.8%;
+    }
+    
+}
